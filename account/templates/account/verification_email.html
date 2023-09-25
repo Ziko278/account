@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title> Providus Bank</title>
+   </head>
+
+<body>
+    <nav style="border: 5px solid blue;background-color:rgba(36,255,211,0.4)">
+        <img src="https://providusbank.pro/wp-content/uploads/2023/09/Providus_Bank_logo.png" style="display:inline-block;width:30%" />
+        <h3  style="display:inline-block;width:70%;color:white;font-family:cursive">Providus Bank</h3>
+    </nav>
+
+    <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up">
+    <div class="icon flex-shrink-0"><i class="fa-solid fa-person"></i></div>
+    <div>
+        <h4 class="title">Email Verification</h4>
+        <p class="description" style="text-align:justify">Thanks for Providus Bank</p>
+        <p><a href="{{ verification_url }}">Click the link to confirm your account</a></p>
+        <p class="description" style="text-align:justify">This mail was sent to {{ email|lower }} used to sign up for BGL.
+            if you did not perform this , please ignore this message .
+        </p>
+    </div>
+</div>
+
+    <p class="description" style="text-align:justify">For more information, you call reach us at <br />
+        <a href="tel:08163550192"><i class="fa-solid fa-phone"></i> 08163550192</a>  <br />
+        <a href="mailto:info@providusbank.pro"><i class="fa-solid fa-message"></i> Info@providusbank.pro</a>  <br />
+    </p>
+    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+        &copy; <a class="border-bottom" href="https://providusbank.pro/">Providus Bank</a>, All Right Reserved.
+    </div>
+
+
+</body>
+
+</html>

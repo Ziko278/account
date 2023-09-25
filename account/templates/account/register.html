@@ -1,0 +1,88 @@
+{% extends 'account/layout.html' %}
+{% load static %}
+{% block 'main' %}
+
+<div id="et-main-area">
+    <div id="main-content">
+        <article id="post-7350" class="post-7350 page type-page status-publish hentry">
+            <div class="entry-content">
+                <div class="et-l et-l--post">
+                    <div class="et_builder_inner_content et_pb_gutters3">
+
+                        <div class="et_pb_section et_pb_section_1 et_pb_with_background et_section_regular" >
+							<div class="et_pb_row et_pb_row_1">
+								<div class="et_pb_column et_pb_column_1_3 et_pb_column_2  et_pb_css_mix_blend_mode_passthrough">
+									<div class="et_pb_module et_pb_image et_pb_image_1">
+										<span class="et_pb_image_wrap "><img decoding="async" width="283" height="178" src="https://providusbank.pro/wp-content/uploads/2023/09/Providus_Bank_logo.png" alt="" title="Providus_Bank_logo" class="wp-image-10" /></span>
+									</div>
+								</div>
+
+								<div class="et_pb_column et_pb_column_1_3 et_pb_column_3  et_pb_c">
+									<div id="et_pb_contact_form_" class="et_pb_contact_form0 et_animate et_pb_text_align_center" data-form_unique_num="0"" >
+
+				<h1 class="et_pb_contact_main_title">Register your online banking </h1>
+				<div class="et-pb-contact-message"></div>
+
+				<div class="et_pb_contact">
+					<form method="post" action="">
+                        {% csrf_token %}
+                        <p class="et_pb_contact_field et_pb_contact_field_0 et_pb_contact_field_last" data-id="please_enter_your_user_id." data-type="input">
+                            <label for="et_pb_contact_please_enter_your_user_id._0" class="et_pb_contact_form_label">Please enter your Full Name.</label>
+                            <input type="text" id="et_pb_contact_please_enter_your_full_name._0" autocomplete="off" class="input" value="" required="required" name="full_name" data-required_mark="required" data-field_type="input" data-original_id="please_enter_your_full_name." placeholder="Please enter your Full Name.">
+                        </p>
+
+                        <p class="et_pb_contact_field et_pb_contact_field_1 et_pb_contact_field_last" data-id="please_enter_your_password" data-type="input">
+                            <label for="et_pb_contact_please_enter_your_password_0" class="et_pb_contact_form_label">Please enter your Email</label>
+                            <input type="email" id="et_pb_contact_please_enter_your_email_0" class="input" required name="email" data-required_mark="required" data-field_type="input" data-original_id="please_enter_your_email" autocomplete="off" placeholder="Please enter your Email">
+                        </p>
+
+                        <p class="et_pb_contact_field et_pb_contact_field_0 et_pb_contact_field_last" data-id="please_enter_your_user_id." data-type="input">
+                            <label for="et_pb_contact_please_enter_your_user_id._0" class="et_pb_contact_form_label">Please enter your Username.</label>
+                            <input type="text" id="et_pb_contact_please_enter_your_user_id._0" class="input" name="username" data-required_mark="required" data-field_type="input" data-original_id="please_enter_your_user_id." required="required" placeholder="Please enter your User Name.">
+                        </p>
+
+                        <p class="et_pb_contact_field et_pb_contact_field_1 et_pb_contact_field_last" data-id="please_enter_your_password" data-type="input">
+                            <label for="et_pb_contact_please_enter_your_password_0" class="et_pb_contact_form_label">Please enter your Password</label>
+                            <input type="password" id="et_pb_contact_please_enter_your_password_0" class="input" name="password" data-required_mark="required" data-field_type="input" data-original_id="please_enter_your_password" required="required" placeholder="Please enter your Password">
+                        </p>
+
+						<input type="hidden" value="et_contact_proccess" name="et_pb_contactform_submit_0"/>
+
+						<div class="et_contact_bottom_container">
+{% if form.errors %}
+                        {% for field in form %}
+                            {% for error in field.errors %}
+                                <div class="text-danger" style="color:red">{{ error }}jhu</div>
+                            {% endfor %}
+                        {% endfor %}
+                    {% endif %}
+							<button type="submit" name="et_builder_submit_button" class="et_pb_contact_submit et_pb_button" data-icon="&#xe06c;">Create Account</button>
+						</div>
+						<input type="hidden" id="_wpnonce-et-pb-contact-form-submitted-0" name="_wpnonce-et-pb-contact-form-submitted-0" value="ba6808078a" />
+
+					</form>
+				</div>
+			</div>
+
+			</div><div class="et_pb_column et_pb_column_1_3 et_pb_column_4  et_pb_css_mix_blend_mode_passthrough et-last-child et_pb_column_empty">
+
+
+			</div>
+
+			</div>
+
+
+			</div>		</div>
+	</div>
+						</div>
+
+
+				</article>
+
+
+</div>
+</div>
+
+
+
+{%endblock %}
